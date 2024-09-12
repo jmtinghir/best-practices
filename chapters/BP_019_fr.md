@@ -2,9 +2,11 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   910   |   | 19  |      |
+| GreenIT | V2 | V3 | V4 | V5 |
+|:-------:|:--:|:--:|:--:|:--:|
+|   910   |    | 19 | 59 |    |
+
+RGESN : 2.10
 
 ### Catégories
 
@@ -24,11 +26,12 @@
 
 ### Description
 
-Les principaux réseaux sociaux tels que Facebook, Twitter, Pinterest, etc. fournissent des plugins à installer sur une page web
-pour y afficher un bouton Partager et un compteur de J’aime. Ces plugins JavaScript sont très gourmands en ressources : 
+Les principaux réseaux sociaux tels que Facebook, X (anciennement Twitter), Pinterest, etc. fournissent des plugins à installer sur une page web
+pour y afficher un bouton Partager ou un compteur de J’aime. Ces plugins JavaScript sont très gourmands en ressources : 
 pour fonctionner, ils nécessitent un grand nombre de requêtes et de télécharger des fichiers lourds. 
 Mieux vaut leur préférer des liens directs, en HTML, vers les pages de partage. 
 On peut générer ces liens à la main (voir ci-dessous) ou via un outil tel que https://www.sharelinkgenerator.com/.
+Cette bonne pratique ne se limite pas aux réseaux sociaux !
 
 ### Exemple
 
@@ -39,7 +42,7 @@ Les réseaux sociaux possèdent tous une URL qui permet à leurs membres de part
 On peut donc facilement ajouter un bouton qui ouvre une pop-up de partage comme le font les boutons officiels, par exemple avec le code suivant :
 
 ```html
-<button type = "button" onclick = "window.open('https://www.facebook.com/ sharer/sharer.php?u=XXXXX', '', 'menubar = no, toolbar = no, resizable = yes, scrollbars = yes, height = 500, width = 700')">
+<button type = "button" onclick = "window.open('https://www.facebook.com/sharer/sharer.php?u=XXXXX', '', 'menubar = no, toolbar = no, resizable = yes, scrollbars = yes, height = 500, width = 700')">
     Je partage cette page sur Facebook
 </button>
 ```
